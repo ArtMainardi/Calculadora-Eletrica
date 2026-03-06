@@ -1,5 +1,6 @@
 function dailyConsumptiom(){
-    let hourConsumption = kwh * 0.9;
+    let taxa = parseFloat(prompt("Digite a taxa (reais por kWh): "));
+    let hourConsumption = kwh * taxa;
     let timeUse = parseInt(prompt("Digite o tempo (em horas) diário de uso desse eletrodoméstico: "));
     let dailyKwh = kwh * timeUse;
     let consumoDiario = dailyKwh * 0.9;
