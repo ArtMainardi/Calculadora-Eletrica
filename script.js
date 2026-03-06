@@ -1,21 +1,22 @@
-let nome = prompt(`Digite o nome do eletrodoméstico: `);
-let kwh = 0;
+console.log("========================================");
+console.log("--------- Calculadora Elétrica ---------");
+console.log("========================================");
 
-let option = parseInt(prompt(`Escolha uma opção para fazer o cálculo:
-1- Usando WATTS
-2- Uando kWh
+let type = parseInt(prompt(`Digite uma opção: 
+1- Calcular consumo de eletrodomésticos (kWh) 
+2- Conversor de medidas
 `));
+let n1;
+let n2;
 
-switch(option){
+
+switch(type){
     case 1:
-        let power = parseInt(prompt("Digite a potência do(a) " + nome + ": "));
-        kwh = power / 1000;
-        dailyConsumptiom();
+        calculoConsumo();
         break;
     case 2:
-        kwh = parseFloat(prompt("Digite o kWh do(a) " + nome + ": "));
-        dailyConsumptiom();
+        conversorMedidas();
         break;
     default:
-        alert("Erro: opção digitada inválida!");
+        alert("ERRO: opção digitada inválida!");
 }
