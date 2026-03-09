@@ -38,7 +38,10 @@ function conversorMedidas(){
 
     definirIndexFinal();
 
-    resultado = (valor*inicialIndex) * finalIndex;
+    resultado = (valor*inicialIndex) / finalIndex;
 
     alert("Resultado: " + resultado + " " + prefixoFinal + unidadeMedida)
+
+    console.log(`Valor inicial: ${valor + " " + prefixoInicial + unidadeMedida}`)
+    console.log(`Valor final: ${resultado + " " + prefixoFinal + unidadeMedida}`)
 }
