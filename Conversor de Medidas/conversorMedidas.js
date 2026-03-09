@@ -1,8 +1,8 @@
 let unidadeMedida = "";
-let valor;
-let medidaInicial;
-let medidaFinal;
-let resultado;
+let valor = 0;
+let medidaInicial = 0;
+let medidaFinal = 0;
+let resultado = 0;
 
 function conversorMedidas(){
     console.log("-- Conversor de Medidas selecionado! --");
