@@ -1,23 +1,17 @@
-let qtdFaixas, faixa1, faixa2;
-
 function calculadoraResistor(){
-    while(qtdFaixas != 4 || qtdFaixas != 5){
-        qtdFaixas = parseInt(prompt(`Digite a quantidade de faixas (4 ou 5): `));
+    const faixas = document.querySelector("#faixas");
+    const seletor5 = document.querySelector("#seletor-cores-5");
+    const faixa1 = document.querySelector("#cor1");
+    const faixa2 = document.querySelector("#cor2");
+    const faixa3 = document.querySelector("#cor3");
+    const faixa4 = document.querySelector("#cor4");
+    const faixa5 = document.querySelector("#cor5");
 
-        if(qtdFaixas != 4 || qtdFaixas != 5){
-            alert("ERRO: opção digitada inválida!");
+    faixas.addEventListener('change', () => {
+        if(faixas.value == "5"){
+            seletor5.style.display = 'flex';
+        } else {
+            seletor5.style.display = 'none';
         }
-    }
-
-    faixa1 = parseInt(prompt(`"Valor atual: ${valor + " " + unidadeMedida}
-    Escolha a medida inicial do valor:
-    1- p
-    2- n
-    3- µ
-    4- m
-    5- (unidade principal)
-    6- k
-    7- M
-    8- G
-    `));
+    });
 }
