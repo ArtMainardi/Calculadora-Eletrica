@@ -8,15 +8,16 @@
     flex-direction: column;
     width: 350px;
     margin: 0 auto;
+    margin-bottom: 30px;
     padding: 15px;
     gap: 10px;
     background-color: rgb(255, 197, 126);
     border-radius: 20px;
     box-shadow: 0 10px 30px rgba(255, 148, 60, 0.342);
-    transition: ease 0.1s;
+    transition: ease 0.3s;
 }
-.selectors-container:hover{
-    transform: scale(1.04);
+.main-container:hover{
+    transform: scale(1.005);
 }
 
 .title {
@@ -83,4 +84,21 @@
     text-align: center;
     background-color: rgba(255, 255, 255, 0);
     border: none;
+}
+
+.result-container{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    margin: 0 auto;
+    padding: 15px;
+    gap: 10px;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(173, 173, 173);
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.18);
+    transition: ease 0.2s;
+}
+.result-container:hover{
+    transform: scale(1.04);
 }
