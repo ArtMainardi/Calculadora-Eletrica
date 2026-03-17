@@ -22,6 +22,7 @@ switch(type){
         break;
     case 3:
         resistorModal.style.display = 'flex';
+        
         calculadoraResistor();
         break;
     default:
