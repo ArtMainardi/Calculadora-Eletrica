@@ -6,6 +6,7 @@
 .main-container {
     display: flex;
     flex-direction: column;
+    height: 440px;
     width: 350px;
     margin: 0 auto;
     margin-bottom: 30px;
@@ -14,10 +15,21 @@
     background-color: rgb(255, 197, 126);
     border-radius: 20px;
     box-shadow: 0 10px 30px rgba(255, 148, 60, 0.342);
-    transition: ease 0.3s;
+    transition: height 0.5s ease, transform 0.3s ease;
 }
 .main-container:hover{
     transform: scale(1.005);
+}
+.main-container-extendido {
+    height: 485px; 
+}
+
+.seletor-animation {
+    animation: seletorAnimation 1s ease forwards;
+}
+@keyframes seletorAnimation {
+    from { opacity: 0; transform: translateY(-10px);}
+    to { opacity: 1; transform: translateY(0);}
 }
 
 .title {
@@ -63,6 +75,7 @@
 .color-bands-selectors{
     display: grid;
     place-items: center;
+    height: 253px;
     width: 100%;
     gap: 10px;
     padding: 10px;
@@ -70,10 +83,14 @@
     flex-direction: column;
     background-color: white;
     border: 1px solid rgb(151, 151, 151);
-    transition: ease 0.2s;
+    transition: height 0.5s ease, transform ease 0.2s;
+    overflow: hidden;
 }
 .color-bands-selectors:hover{
     transform: scale(1.005);
+}
+.color-bands-selectors-extended{
+    height: 300px;
 }
 
 .cor{
@@ -87,12 +104,11 @@
 }
 
 .result-container{
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    place-items: center;
     width: 350px;
     margin: 0 auto;
     padding: 15px;
-    gap: 10px;
     background-color: rgb(255, 255, 255);
     border: 2px solid rgb(173, 173, 173);
     border-radius: 20px;
@@ -101,4 +117,9 @@
 }
 .result-container:hover{
     transform: scale(1.04);
+}
+
+.text {
+    font-size: 20px;
+    font-weight: 500;
 }
