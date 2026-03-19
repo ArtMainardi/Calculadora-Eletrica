@@ -14,7 +14,7 @@
 .main-container {
     display: flex;
     flex-direction: column;
-    height: 440px;
+    height: 455px;
     width: 350px;
     margin: 0 auto;
     margin-bottom: 30px;
@@ -29,7 +29,7 @@
     transform: scale(1.005);
 }
 .main-container-extendido {
-    height: 485px; 
+    height: 500px; 
 }
 
 .seletor-animation {
@@ -83,7 +83,7 @@
 .color-bands-selectors{
     display: grid;
     place-items: center;
-    height: 253px;
+    height: 268px;
     width: 100%;
     gap: 10px;
     padding: 10px;
@@ -98,7 +98,7 @@
     transform: scale(1.005);
 }
 .color-bands-selectors-extended{
-    height: 300px;
+    height: 315px;
 }
 
 .cor{
@@ -109,6 +109,10 @@
     text-align: center;
     background-color: rgba(255, 255, 255, 0);
     border: none;
+}
+
+.selector5  {
+    margin-top: 15px;
 }
 
 .result-container{
@@ -143,26 +147,79 @@
 }
 
 .resistor{
+    position: relative;
     display: grid;
     place-items: center;
     margin-top: 160px;
-    height: 320px;
+    height: 340px;
+    transition: height 0.5s ease forwards;
 }
+.resistor-extended {
+    height: 387px;
+}
+
 .pino {
     display: flex;
-    height: 100%;
-    width: 20px;
+    height: 340px;
+    width: 15px;
     background-color: rgb(163, 163, 163);
     border-radius: 10px;
+    transition: height 0.5s ease forwards;
+}
+.pino-extended {
+    height: 387px;
 }
 
 .quadrado {
-    display: block;
-    position: relative;
-    top: 10px;
-    right: 20px;
+    position: absolute;
     height: 80px;
     width: 80px;
     background-color: rgb(255, 216, 166);
     border-radius: 30px;
+}
+.q1 {
+    top: 45px;
+}
+.q2 {
+    bottom: 45px;
+}
+
+.retangulo{
+    display: grid;
+    place-items: center;
+    position: absolute;
+    height: 200px;
+    width: 50px;
+    background-color: rgb(255, 216, 166);
+    transition: height 0.5s ease;
+}
+.retangulo-extended {
+    height: 247px;
+}
+
+.faixa {
+    position: absolute;
+    height: 10px;
+    width: 100%;
+    background-color: rgb(224, 224, 224);
+}
+#f1 {
+    bottom: 30px;
+}
+#f2 {
+    top: 65px;
+}
+#f3 {
+    top: 110px;
+}
+
+#f4 {
+    top: 110px;
+}
+.f4-extended {
+    top: 155px !important;
+}
+
+#f5 {
+    top: 28px;
 }

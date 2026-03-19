@@ -80,7 +80,7 @@
                             <option value=0.01>Prateado</option>
                         </select>
                     </div>
-                    <div class="selectors-container">
+                    <div class="selectors-container selector5">
                         <select class="cor" id="cor5">
                             <option value="">Selecione a cor da faixa</option>
                             <option value="±1%">Marrom</option>
@@ -103,17 +103,35 @@
         <div class="resistor-container">
             <div class="resistor">
                 <div class="pino"></div>
-                <div class="quadrado"></div>
+                <div class="retangulo">
+                    <div class="faixa" id="f2"></div>
+                    <div class="faixa" id="f3" style="display: none;"></div>
+                    <div class="faixa" id="f4"></div>
+                </div>
+                <div class="quadrado q1">
+                    <div class="faixa" id="f1"></div>
+                </div>
+                <div class="quadrado q2">
+                    <div class="faixa" id="f5"></div>
+                </div>
             </div>
         </div>
     </div>
+    
+    <!-- Calculadora de Consumo: -->
     <script src="Calculadora de Consumo/calculoConsumo.js"></script>
     <script src="Calculadora de Consumo/calculoKwh.js"></script>
+
+    <!-- Conversor de Medidas: -->
     <script src="Conversor de Medidas/conversorMedidas.js"></script>
     <script src="Conversor de Medidas/definirIndexInicial.js"></script>
     <script src="Conversor de Medidas/definirIndexFinal.js"></script>
+
+    <!-- Calculadora de Resistor: -->
     <script src="Calculadora Resistor/calculadoraResistor.js"></script>
     <script src="Calculadora Resistor/mudarCorSeletor.js"></script>
+    <script src="Calculadora Resistor/onOff5selectors.js"></script>
+    <script src="Calculadora Resistor/addListeners.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
