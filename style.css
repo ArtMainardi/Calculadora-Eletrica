@@ -26,7 +26,7 @@
     background-color: rgb(255, 197, 126);
     border-radius: 20px;
     box-shadow: 0 10px 30px rgba(255, 148, 60, 0.342);
-    transition: height 0.5s ease, transform 0.3s ease;
+    transition: height 1.3s ease, transform 0.3s ease;
 }
 .main-container:hover{
     transform: scale(1.005);
@@ -36,7 +36,7 @@
 }
 
 .seletor-animation {
-    animation: seletorAnimation 1s ease forwards;
+    animation: seletorAnimation 1.5s ease forwards;
 }
 @keyframes seletorAnimation {
     from { opacity: 0; transform: translateY(-10px);}
@@ -94,7 +94,7 @@
     flex-direction: column;
     background-color: white;
     border: 1px solid rgb(151, 151, 151);
-    transition: height 0.5s ease, transform ease 0.2s;
+    transition: height 1s ease, transform ease 0.2s;
     overflow: hidden;
 }
 .color-bands-selectors:hover{
@@ -161,7 +161,11 @@
     place-items: center;
     margin-top: 160px;
     height: 340px;
-    transition: height 0.5s ease forwards;
+    transition: height 2s ease, transform 1.5s ease;
+    transform: scale(1.001);
+}
+.resistor:hover {
+    transform: scale(1.08);
 }
 .resistor-extended {
     height: 387px;
@@ -173,7 +177,7 @@
     width: 15px;
     background-color: rgb(163, 163, 163);
     border-radius: 10px;
-    transition: height 0.5s ease forwards;
+    transition: height 2s ease;
 }
 .pino-extended {
     height: 387px;
@@ -200,7 +204,7 @@
     height: 200px;
     width: 50px;
     background-color: rgb(255, 216, 166);
-    transition: height 0.5s ease;
+    transition: height 1s ease;
 }
 .retangulo-extended {
     height: 247px;
@@ -214,16 +218,28 @@
 }
 #f1 {
     bottom: 30px;
+    transition: all 0.6s ease;
 }
 #f2 {
     top: 65px;
+    transition: all 0.6s ease;
 }
 #f3 {
+    opacity: 0;
     top: 110px;
+    transition: all 0.6s ease;
+}
+.f3-extended {
+    animation: aparecer 1.5s ease-in-out forwards;
+}
+@keyframes aparecer{
+    from { opacity: 0; transform: translateY(-20px);}
+    to { opacity: 100%; transform: translateY(0px);}
 }
 
 #f4 {
     top: 110px;
+    transition: top 1s ease, all 0.6s ease;
 }
 .f4-extended {
     top: 155px !important;
@@ -231,4 +247,5 @@
 
 #f5 {
     top: 28px;
+    transition: all 0.6s ease;
 }

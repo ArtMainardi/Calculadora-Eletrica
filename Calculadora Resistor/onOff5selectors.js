@@ -9,6 +9,7 @@ function onOff5selectors(option){
     if(option == 1){
         seletor3.style.display = 'flex';
         f3.style.display = 'flex';
+        f3.classList.add("f3-extended");
         f4.classList.add("f4-extended");
         seletor3.classList.add("seletor-animation");
         mainContainer.classList.add("main-container-extendido");
@@ -19,6 +20,7 @@ function onOff5selectors(option){
     } else{
         seletor3.style.display = 'none';
         f3.style.display = 'none';
+        f3.classList.remove("f3-extended");
         f4.classList.remove("f4-extended");
         seletor3.classList.remove("seletor-animation");
         mainContainer.classList.remove("main-container-extendido");

@@ -14,11 +14,11 @@ function addListeners(){
         atualizarResultado();
     });
     faixa3.addEventListener('change', () => {
-        mudarCorSeletor(faixa3, f3, 1);
+        mudarCorSeletor(faixa3, f4, 1);
         atualizarResultado();
     });
     faixa4.addEventListener('change', () => {
-        mudarCorSeletor(faixa4, f4, 2);
+        mudarCorSeletor(faixa4, f3, 2);
         atualizarResultado();
     });
     faixa5.addEventListener('change', () => {
